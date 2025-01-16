@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Reply Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-info">
+                <img height="80px" src="https://cdn.vectorstock.com/i/preview-1x/87/26/green-button-with-cute-faces-chat-app-icon-3d-vector-45788726.jpg" alt="Bot Avatar" class="header-avatar">
+                <span>ChatBot</span>
+            </div>
+                <button>Settings</button>
+        </div>
+
+        <!-- Messages Area -->
+        <div id="messages" class="messages"></div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <input type="text" id="messageInput" class="message-input" placeholder="Type a message..." />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

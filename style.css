@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(180deg, #3c1001,  #cfefd8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(12, 42, 61, 0.9);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #036d21;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+}
+
+.header-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.header button {
+    background-color: #348002;
+    border: 1px solid rgb(253, 253, 253);
+    color: rgb(252, 252, 252);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right:2px;
+    width: 65px;
+}
+
+.header button:hover {
+    background-color: #0e5102;
+}
+
+/* Messages Area */
+.messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.user {
+    background-color: #0463c9;
+    color: white;
+    align-self: flex-end;
+    border-radius: 15px 15px 0 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    position: relative;
+}
+
+.user::before {
+    content: url('https://via.placeholder.com/25');
+    position: absolute;
+    left: 10px;
+}
+
+.bot {
+    background-color: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+    border-radius: 15px 15px 15px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    position: relative;
+}
+
+.bot::before {
+    content: url('https://via.placeholder.com/25');
+    position: absolute;
+    left: 10px;
+}
+
+/* Input Area */
+.input-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.message-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 15%;
+    padding: 10px;
+    background-color: #048809;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
