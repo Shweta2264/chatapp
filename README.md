@@ -1,1 +1,2 @@
-# chatapp
+# CHATAPP
+# It's a Real time chat app which are designed to gve some dfault replies to chats....
